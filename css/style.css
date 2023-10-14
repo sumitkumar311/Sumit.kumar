@@ -10,6 +10,18 @@
    scroll-behavior: smooth;
    font-family: 'Poppins', sans-serif;
 }
+
+
+#minicircle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  z-index: 99999;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
 :root{
    --bg-color: #f9f7f7;
    --second-bg-color: #fff;
@@ -25,6 +37,8 @@ html{
 body{
    background-color: var(--bg-color);
    color: var(--text-color);
+   position: relative;
+  overflow: hidden; /* Hide overflowing content */
 }
 section{
    min-height: 100vh;
